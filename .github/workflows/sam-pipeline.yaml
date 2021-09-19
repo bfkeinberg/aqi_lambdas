@@ -1,6 +1,6 @@
 name: Deploy to AWS Lambda
 on:
-  push:
+  [push,workflow_dispatch]:
     branches:
       - main
 jobs:
