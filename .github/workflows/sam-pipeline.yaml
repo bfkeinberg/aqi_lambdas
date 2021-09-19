@@ -1,7 +1,8 @@
 name: Deploy to AWS Lambda
 on:
-  branches:
-    - main
+  push:
+    branches:
+      - main
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
