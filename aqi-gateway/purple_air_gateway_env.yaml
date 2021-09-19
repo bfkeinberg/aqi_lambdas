@@ -19,6 +19,10 @@ Resources:
           Properties:
             Path: /purpleair
             Method: GET
+      Environment:
+        Variables:
+          GOOGLE_APPLICATION_CREDENTIALS: /opt/nodejs/aqi-gateway-d19ea6ab0844.json
+          PURPLE_AIR_KEY: CDB7F040-F990-11EA-910A-42010A800178
       Layers:
         - 'arn:aws:lambda:us-east-1:564844288026:layer:axios:1'
         - 'arn:aws:lambda:us-east-1:564844288026:layer:google-credentials:1'
